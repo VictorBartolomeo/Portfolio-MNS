@@ -1,0 +1,744 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.divLogo {
+    text-align: center;
+}
+
+.divLogo {
+
+    background-color: rgb(0, 48, 73);
+}
+
+.logo {
+    width: 10%;
+}
+
+nav {
+    z-index: 1000;
+    font-weight: 300;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(102, 155, 188);
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow: auto;
+    z-index: 1000;
+}
+
+nav a {
+    z-index: 1000;
+    position: sticky;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: flex-start;
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 10px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    min-width: 20%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+nav a:hover {
+    background-color: rgb(253, 240, 213);
+    color: rgb(0, 48, 73);
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: "roboto";
+    background-color: white;
+}
+
+
+h1 {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.divh2right {
+    font-family: "roboto";
+    font-size: 2em;
+    display: flex;
+    padding: 0;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    margin-right: 15%;
+    justify-content: end;
+}
+
+.divh2left {
+    font-family: "roboto";
+    font-size: 2em;
+    font-weight: 600;
+    display: flex;
+    padding: 0;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 15%;
+    justify-content: start;
+}
+
+
+h3 {
+    font-family: "roboto";
+    font-size: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+h4 {
+    margin-top: 10px;
+}
+
+p {
+    font-family: "roboto";
+    font-size: 1em;
+}
+
+.realisations-musicales h3{
+    font-family: "Playwrite PL", cursive;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.hero {
+    padding: 150px;
+    background-image: url(../images/illustrations/hero_background.jpg);
+    background-size: cover;
+    background-position-y: 85%;
+    display: flex;
+    justify-content: center;
+    font-family: "Dela Gothic One", sans-serif;
+
+}
+
+.Grid_Hero {
+    padding: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.hero_title {
+    text-shadow: 2px 2px 0px white;
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    margin: 0 0 30px 0;
+}
+
+.hero_p {
+    font-size: 1.5em;
+    font-style: italic;
+    display: block;
+    text-align: center;
+
+}
+
+.CV_CTA {
+    text-align: center;
+}
+
+
+.CVbutton {
+    background-color: rgb(102, 155, 188);
+    color: white;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    border: solid 2px;
+}
+
+.CVbutton:hover {
+    border: solid 4px;
+    color: white;
+    background-color: rgb(120, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.presentation {
+    margin-top: -20px;
+    padding: 80px 50px 80px 50px;
+    text-align: center;
+    background-color: rgb(224, 237, 247);
+}
+
+.grid_presentation {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.portraitPresentation {
+    width: 55%;
+    border-radius: 2.5%;
+}
+
+.grid-pres_portrait {
+    grid-column-start: 1;
+
+
+}
+
+.grid-pres_text {
+    padding: 10% 20%;
+    text-align: justify;
+    grid-column-start: 2;
+
+
+}
+
+.btnDivEnSavoirPlus {
+    margin-top: 10%;
+}
+
+.CTAButton {
+    text-decoration: none;
+    background-color: rgb(102, 155, 188);
+    padding: 2% 3%;
+    border-radius: 4%;
+    font-size: smaller;
+    font-weight: 500;
+    color: white;
+}
+
+.biographie {
+    margin-top: 0px;
+    padding: 50px 50px 80px 50px;
+    text-align: center;
+    background-color: rgb(224, 237, 247);
+}
+
+.grid_biographie {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.portraitBiographie {
+    width: 65%;
+    border-radius: 2.5%;
+}
+
+.grid-bio_text {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 5% 10%;
+    text-align: justify;
+    border-radius: 15px;
+}
+
+
+.grid-bio_portrait {
+    display: block;
+    align-content: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.etudes{
+    margin-top: 0px;
+    padding: 50px 50px 80px 50px;
+    background-color: white;
+}
+
+.etudes_li{
+    display: flex;
+    justify-content: center;
+}
+
+.etude-li_certif{
+list-style-image: url("../icons/certifs.svg");
+background-color: rgb(102, 155, 188);
+color: white;
+padding: 10px 20px;
+
+margin-bottom: 20px;
+}
+.etude-li_diplome{
+    list-style-image: url("../icons/diplom.svg");
+    background-color: rgb(102, 155, 188);
+color: white;
+padding: 10px 20px;
+margin-bottom: 20px;
+}
+
+.etude-li_certif:hover,.etude-li_diplome:hover{
+    color: white;
+    background-color: rgb(120, 0, 0);
+    transition: all 0.5s ease; 
+}
+
+
+
+.competences {
+    background-color: rgb(255, 255, 255);
+    padding: 50px 50px 80px 50px;
+    margin-bottom: 200px;
+}
+
+.grid-competences_conteneur {
+    height: 100%;
+    position: relative;
+}
+
+.grid-competences-logo {
+    position: relative;
+    top: 10%;
+    left: 42.5%;
+    width: fit-content;
+    height: fit-content;
+    z-index: 2;
+    padding: 8px;
+    background-color: rgb(102, 155, 188);
+
+
+}
+
+.grid-competences-text {
+    z-index: 2;
+    background-color: rgb(237, 237, 237);
+    padding: 40px 50px;
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+}
+
+.grid-competences-h3 {
+    margin-top: 7.5%;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.CTAButton_competences a {
+    display: block;
+    position: absolute;
+    bottom: 7.5%;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    background-color: rgb(102, 155, 188);
+    padding: 2% 3%;
+    font-size: smaller;
+    font-weight: 500;
+    color: white;
+}
+
+.CTAButton_competences a:hover {
+    background-color: rgb(120, 0, 0);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(120, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.iconesCompetences {
+    width: 53px;
+    height: 53px;
+}
+
+.gridCompetences {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 0 50px;
+}
+
+.grid-competences_1 {
+    grid-column-start: 1;
+}
+
+.grid-competences_2 {
+    grid-column-start: 2;
+}
+
+.grid-competences_3 {
+    grid-column-start: 3;
+}
+
+.grid-competences_4 {
+    grid-column-start: 4;
+}
+
+.grid-competences-text:hover {
+    box-shadow: 0px 0px 25px rgba(120, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.realisations {
+    background-color: rgb(224, 237, 247);
+    padding: 50px 50px 80px 50px;
+}
+.realisations-music_centre{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.realisations-music_centre a{
+    padding: 10px;
+}
+
+
+
+
+audio {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+audio:hover {
+    box-shadow: 3px 3px 50px rgba(46, 1, 105, 0.5);
+    border-radius: 32px;
+    transition: all 0.3s ease;
+}
+
+
+.button-right {
+    text-align: end;
+    margin-top: 35px;
+    margin-left: 200px;
+    margin-bottom: 0px;
+}
+
+
+.gridFilm {
+    padding: 0% 20%;
+    display: grid;
+    margin-top: 40px;
+    column-gap: 40px;
+    justify-content: left;
+}
+
+.gridFilm1 {
+    grid-column-start: 1;
+}
+
+.gridFilm2 {
+    grid-column-start: 2;
+}
+
+.gridFilm3 {
+    grid-column-start: 3;
+    border: 1px solid black;
+}
+
+.GridFilm4_Bouton-Realisations {
+    text-decoration: none;
+    background-color: rgb(102, 155, 188);
+    padding: 2% 3%;
+    border-radius: 4%;
+    font-size: small;
+    font-weight: 500;
+    color: white;
+    margin-left: 100px;
+    padding: 15px;
+    grid-column-start: 4;
+    align-self: center;
+}
+
+.gridFilm1:hover,
+.gridFilm2:hover,
+.gridFilm3:hover {
+    box-shadow: 0px 0px 25px rgba(120, 0, 0, 0.5);
+    transition: all 0.3s ease-in;
+}
+
+.Grid-Film4_Bouton-Realisations:hover {
+    background-color: rgb(120, 0, 0);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(120, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.audioCompositeur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.competences-info{
+    background-color: rgba(224, 237, 247, 0.863);
+    background-image: url("../images/illustrations/banner_informatique.jpg");
+    background-blend-mode: screen;
+    border-bottom: 3px solid black;
+    padding-bottom: 50px;
+}
+.competences-info h1{
+    padding-top: 50px;
+}
+.competences-musique{
+    background-color: rgb(224, 237, 247);
+    border-bottom: 3px solid black;
+    padding-bottom: 50px;
+}
+.competences-photographie{
+    background-color: rgba(255, 255, 255, 0.86);
+    background-image: url("../images/illustrations/louvrebanner.jpg");
+    background-blend-mode: screen;
+    background-size: 100%;
+    background-position: 20%;
+    border-bottom: 3px solid black;
+    padding-bottom: 50px;
+}
+
+.competences-softskills{
+    background-color: rgb(224, 237, 247);
+    background-blend-mode:luminosity;
+    border-bottom: 3px solid black;
+    padding-bottom: 50px;
+}
+
+.photographie{
+    padding: 50px 50px 80px 50px;
+    text-align: center;
+    background-color: rgb(224, 237, 247);
+
+}
+
+.gravure_musicale{
+    padding: 50px 50px 80px 50px;
+    background-color: white;
+
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    font-size: 2em;
+    height: 175px;
+}
+
+
+.trSkills {
+    height: 85px;
+}
+
+td {
+    text-align: center;
+}
+
+td img {
+    width: 10%;
+}
+
+.trSkills:hover{
+    background-color: rgb(253, 240, 213);
+    color: black;
+    transition: all 0.5s ease;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+legend {
+    font-family: "Cinzel", serif;
+    font-weight: 200;
+    font-size: 2em;
+    font-weight: 500;
+    font-style:normal;
+}
+
+input[type="submit"] {
+    background-color: rgb(224, 237, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(120, 0, 0);
+    color: white;
+
+}
+
+.formulaire_contact{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+label {
+    line-height: 1.9rem;
+    font-weight: 600;
+}
+
+fieldset {
+    padding: 80px 150px;
+}
+
+footer {
+    padding-bottom: 10px;
+    background-color: rgb(0, 48, 73) ;
+}
+
+.infos_footer {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.gridFooter {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    padding-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    width: auto;
+    height: 100%;
+
+}
+
+.gridFooter1 {
+    grid-column: 1;
+
+}
+
+.gridFooter1 img {
+    width: 40%;
+}
+
+.gridFooter2 {
+    grid-column: 2;
+    text-align: center;
+}
+
+.gridFooter3 {
+    padding-left: 35%;
+    align-content: end;
+    grid-column: 3;
+    text-align: justify;
+}
+
+.gridFooter3_text {
+    display: block;
+    text-align: justify;
+}
+
+
+.social-networks-footer {
+    width: 70%;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 100px;
+}
+
+.fa-github {
+    color: rgb(255, 255, 255);
+}
+
+.fa-linkedin {
+    color: rgb(63, 59, 196);
+}
+
+.fa-facebook {
+    color: rgb(70, 98, 236);
+}
+
+.fa-instagram {
+    color: rgb(171, 31, 166);
+}
+
+.fa-threads {
+    color: rgb(198, 138, 9);
+}
+
+.fa-envelope {
+    color: rgb(255, 255, 255);
+}
+
+.fa-envelope:hover,
+.fa-facebook:hover,
+.fa-github:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-threads:hover {
+    transform: scale(110%);
+    transition: all 0.2s ease-out;
+}
+
+.footer_copyright{
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+}
+
+.realisations-musicales{
+    background-color: rgb(224, 237, 247);
+    padding: 50px 50px 80px 50px;
+}
+
+.gallerie {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 6px;
+    margin-bottom: 50px;
+}
+
+.img2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img.four-grid-cells {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+}
+
+img.wide-image {
+    grid-column: span 2 / auto;
+}
+
