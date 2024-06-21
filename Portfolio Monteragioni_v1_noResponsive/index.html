@@ -14,25 +14,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    
 </head>
 
 
 <body>
     <header>
         <div class="divLogo">
-            <a href="./Accueil.html"><img class="logo" src="./assets/images/logo/SINGLE_WH.png"
+            <a href="./index.html"><img class="logo" src="./assets/images/logo/SINGLE_WH.png"
                     alt="logo d'un chat noir sur fond blanc et d'une lettre B ayant été croquée"
                     style="text-align:center"></a>
         </div>
         <div>
-            <nav>
-                <a href="./Accueil.html">HOME</a>
-                <a href="./Parcours.html">PARCOURS</a>
-                <a href="./Competences.html">COMPÉTENCES</a>
-                <a href="./Realisations.html">RÉALISATION</a>
-                <a href="./Contact.html">CONTACT</a>
+            
+            <label for="toggle"><img src="./assets/icons/burger.svg" alt="burger de navigation"></label>
+            <input type="checkbox" id="toggle">
+            <nav class="main_pages">
+                    <a class="active" href="./index.html">HOME</a>
+                    <a href="./Parcours.html">PARCOURS</a>
+                    <a href="./Competences.html">COMPÉTENCES</a>
+                    <a href="./Realisations.html">RÉALISATION</a>
+                    <a href="./Contact.html">CONTACT</a>
             </nav>
         </div>
 
@@ -139,7 +147,7 @@
                             <p>Passioné de photographie, et de découverte, je capture les <strong>évènements de la vie
                                     urbaine</strong>, et <strong>immortalise les moments de vie</strong>,
                                 de
-                                façon à vous restituer un produit <strong>sérieux, entrainant et professionnel</strong>
+                                façon à vous restituer un produit <strong>sérieux, entrainant et professionnel.</strong>
                             </p>
                             <div class="CTAButton_competences"> <a href="./Competences.html#competences_photographie">COMPÉTENCES EN
                                     PHOTOGRAPHIE</a></div>
@@ -176,26 +184,25 @@
             <div class="gridFilm">
                 <div class="gridFilm1">
                     <a href="./Realisations.html">
-                        <img style="height: 300px;width: 200px;" src="./assets/images/Portfolio/Soul_Travel.jpg"
+                        <img src="./assets/images/Portfolio/Soul_Travel.jpg"
                             alt="Affiche du film : Soul Travel" title="Fiche imdb du film Soul Travel">
                     </a>
                 </div>
 
                 <div class="gridFilm2">
                     <a href="./Realisations.html">
-                        <img style="height: 300px;width: 200px;" src="./assets/images/Portfolio/Oman_Expedition.jpg"
+                        <img src="./assets/images/Portfolio/Oman_Expedition.jpg"
                             alt="Affiche du film : Expedition Oman" title="Fiche imdb du film Expedition Oman">
                     </a>
                 </div>
 
                 <div class="gridFilm3">
                     <a href="./Realisations.html">
-                        <img style="height: 300px;width: 200px;" src="./assets/images/Portfolio/FFH_Page1.jpg"
+                        <img src="./assets/images/Portfolio/FFH_Page1.jpg"
                             alt="Affiche du film : Expedition Oman" title="Fiche imdb du film Expedition Oman">
                     </a>
                 </div>
-
-                <a class="GridFilm4_Bouton-Realisations" href="Realisations.html">TOUTES MES AUTRES RÉALISATIONS...</a>
+                    <a class="GridFilm4_Bouton-Realisations" href="Realisations.html">TOUTES MES AUTRES RÉALISATIONS...</a>      
             </div>
         </section>
 

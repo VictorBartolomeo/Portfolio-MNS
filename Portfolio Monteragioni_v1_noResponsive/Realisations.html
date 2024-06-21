@@ -16,6 +16,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/mobile.css">
 	<link rel="stylesheet" href="./assets/css/caroussel.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,16 +31,19 @@
 <body>
 	<header>
 		<div class="divLogo">
-			<a href="./Accueil.html"><img class="logo" src="./assets/images/logo/SINGLE_WH.png"
+			<a href="./index.html"><img class="logo" src="./assets/images/logo/SINGLE_WH.png"
 					alt="logo d'un chat noir sur fond blanc et d'une lettre B ayant été croquée"
 					style="text-align:center"></a>
 		</div>
 		<div>
-			<nav>
-				<a href="./Accueil.html">HOME</a>
+
+			<label for="toggle"><img src="./assets/icons/burger.svg" alt="burger de navigation"></label>
+			<input type="checkbox" id="toggle">
+			<nav class="main_pages">
+				<a href="./index.html">HOME</a>
 				<a href="./Parcours.html">PARCOURS</a>
 				<a href="./Competences.html">COMPÉTENCES</a>
-				<a href="./Realisations.html">RÉALISATION</a>
+				<a class="active" href="./Realisations.html">RÉALISATION</a>
 				<a href="./Contact.html">CONTACT</a>
 			</nav>
 		</div>
@@ -52,57 +56,53 @@
 			<h2 class="divh2left">En tant que compositeur</h2>
 			<div class="realisations-music_centre">
 				<a href="https://www.imdb.com/title/tt12868484/" target="_blank">
-					<img src="./assets/images/Portfolio/Soul_Travel.jpg" style="height: 400px;width: 300px"
+					<img src="./assets/images/Portfolio/Soul_Travel.jpg" class="affichefilm"
 						alt="Affiche du film : Soul Travel, 4 personnes de dos contemplant l'horizon depuis le Kilimandjaro"
 						title="Fiche imdb du film Soul Travel">
 				</a>
 				<a href="https://www.imdb.com/title/tt14727270/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Expedition%2520Oman"
 					target="_blank">
-					<img src="./assets/images/Portfolio/Oman_Expedition.jpg" style="height: 400px;width: 300px"
+					<img src="./assets/images/Portfolio/Oman_Expedition.jpg" class="affichefilm"
 						alt="Affiche du film : Expedition Oman, deux hommes dévalent une dune en courant dans le sable"
 						title="Fiche imdb du film Expedition Oman">
 				</a>
 				<a href="https://www.ladepeche.fr/2023/11/23/linvitation-le-court-metrage-tourne-dans-la-region-11597237.php"
 					target="_blank">
-					<img src="./assets/images/Portfolio/linvitation.jpeg" style="height: 400px;width: 300px"
+					<img src="./assets/images/Portfolio/linvitation.jpeg" class="affichefilm"
 						alt="Affiche du film : L'invitation, bras d'un homme tatoué le long du corps sur fond noir."
 						title="Brève du journal La Depêche à propos du film">
 				</a>
 				<a href="https://www.youtube.com/watch?v=ggV3cBKQ20M&list=PLiKq8co-T6Xs-_dGFwrI0CSQML8UOdPqJ&index=4"
 					target="_blank">
-					<img src="./assets/images/Portfolio/justmarried.jpg" style="height: 400px;width: 300px"
+					<img src="./assets/images/Portfolio/justmarried.jpg" class="affichefilm"
 						alt="Affiche du film : Just married, une tête d'ours en peluche géante prend les deux tiers de l'affiche"
 						title="Lien Youtube pour regarder le film Just Married">
 				</a>
 				<a href="https://gamagora.itch.io/koda" target="_blank">
-					<img src="./assets/images/Portfolio/Koda_Flyers01_edited.jpg" style="height: 400px;width: 300px"
+					<img src="./assets/images/Portfolio/Koda_Flyers01_edited.jpg" class="affichefilm"
 						alt="Un tanuki spirituel tournant sur lui même sur fond pastel bleu"
 						title="Fiche Gamagora du jeu Koda Kiyomori's Guardian">
 				</a>
 				<a href="https://www.youtube.com/watch?v=b81p1DBplr8&list=PLiKq8co-T6Xs-_dGFwrI0CSQML8UOdPqJ&index=5"
 					target="_blank">
-					<img src="./assets/images/Portfolio/little_doctor.jpg" style="height: 400px;width: 300px"
+					<img src="./assets/images/Portfolio/little_doctor.jpg" class="affichefilm"
 						alt="Un tanuki spirituel tournant sur lui même sur fond pastel bleu"
 						title="Lien Youtube pour regarder le film Little Doctor">
 				</a>
 			</div>
+
 			<div class="audioCompositeur">
 				<div>
-					<h3>Émotion<h3>
-							<audio controls controlsList="nodownload" src="./assets/music/Fiverr Emotion mus.mp3"
-								alt="Compilation de mes musiques dans le genre émotion"></audio>
+					<h3>Émotion</h3>
+					<audio controls src="./assets/music/Emotion_mus.mp3"></audio>
 				</div>
 				<div>
 					<h3>Épique</h3>
-
-					<audio controls controlsList="nodownload" src="./assets/music/Fiverr Epic mus.mp3"
-						alt="Compilation de mes musiques dans le genre épique"></audio>
+					<audio controls src="./assets/music/Epic_mus.mp3"></audio>
 				</div>
 				<div>
 					<h3>Hybrid</h3>
-
-					<audio controls controlsList="nodownload" src="./assets/music/Fiverr Hybrid mus.mp3"
-						alt="Compilation de mes musiques dans un genre hybride entre orchestre et synthétiseurs"></audio>
+					<audio controls src="./assets/music/Hybrid_mus.mp3"></audio>
 				</div>
 			</div>
 
@@ -110,34 +110,31 @@
 		<section id="gravure_musicale" class="gravure_musicale">
 			<h2 class="divh2right">En tant que graveur musical</h2>
 
-			<!-- Slideshow container -->
 			<div class="slideshow-container">
-
-				<!-- Full-width images with number and caption text -->
 				<div class="mySlides fade">
 					<div class="numbertext">1 / 4</div>
-					<img src="./assets/images/Portfolio/FFH_Page1.jpg" style="width:100%"
+					<img src="./assets/images/Portfolio/FFH_Page1.jpg" 
 						alt="Far From Home - Première de couverture">
 					<div class="text">Première de couverture</div>
 				</div>
 
 				<div class="mySlides fade">
 					<div class="numbertext">2 / 4</div>
-					<img src="./assets/images/Portfolio/FFH_Page2.jpg" style="width:100%"
+					<img src="./assets/images/Portfolio/FFH_Page2.jpg"
 						alt="Far From Home - Instrumentarium">
 					<div class="text">Instrumentarium</div>
 				</div>
 
 				<div class="mySlides fade">
 					<div class="numbertext">3 / 4</div>
-					<img src="./assets/images/Portfolio/FFH_Page3.jpg" style="width:100%"
+					<img src="./assets/images/Portfolio/FFH_Page3.jpg" 
 						alt="Far From Home - Page 1, partition de musique d'orchestre">
 					<div class="text">Page 1</div>
 				</div>
 
 				<div class="mySlides fade">
 					<div class="numbertext">4 / 4</div>
-					<img src="./assets/images/Portfolio/FFH_Page4.jpg" style="width:100%"
+					<img src="./assets/images/Portfolio/FFH_Page4.jpg"
 						alt="Far From Home - Page 2, partition de musique d'orchestre">
 					<div class="text">Page 2</div>
 				</div>
@@ -167,7 +164,8 @@
 
 			<div class="gallerie">
 
-				<img class="four-grid-cells img2" src="./assets/images/Portfolio/Photographies/color.jpg" alt="Color run">
+				<img class="four-grid-cells img2" src="./assets/images/Portfolio/Photographies/color.jpg"
+					alt="Color run">
 
 				<img class="img2" src="./assets/images/Portfolio/Photographies/bouteille.jpg"
 					alt="Publicité alcool à consommer avec modération, svp.">

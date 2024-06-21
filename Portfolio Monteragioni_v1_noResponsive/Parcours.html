@@ -16,29 +16,33 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/mobile.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 
 
 <body>
-	<header>
-		<div class="divLogo">
-			<a href="./Accueil.html"><img class="logo" src="./assets/images/logo/SINGLE_WH.png"
-					alt="logo d'un chat noir sur fond blanc et d'une lettre B ayant été croquée"
-					style="text-align:center"></a>
-		</div>
-		<div>
-			<nav>
-				<a href="./Accueil.html">HOME</a>
-				<a href="./Parcours.html">PARCOURS</a>
-				<a href="./Competences.html">COMPÉTENCES</a>
-				<a href="./Realisations.html">RÉALISATION</a>
-				<a href="./Contact.html">CONTACT</a>
-			</nav>
-		</div>
+    <header>
+        <div class="divLogo">
+            <a href="./index.html"><img class="logo" src="./assets/images/logo/SINGLE_WH.png"
+                    alt="logo d'un chat noir sur fond blanc et d'une lettre B ayant été croquée"
+                    style="text-align:center"></a>
+        </div>
+        <div>
+            
+            <label for="toggle"><img src="./assets/icons/burger.svg" alt="burger de navigation"></label>
+            <input type="checkbox" id="toggle">
+            <nav class="main_pages">
+                    <a href="./index.html">HOME</a>
+                    <a class="active" href="./Parcours.html">PARCOURS</a>
+                    <a href="./Competences.html">COMPÉTENCES</a>
+                    <a href="./Realisations.html">RÉALISATION</a>
+                    <a href="./Contact.html">CONTACT</a>
+            </nav>
+        </div>
 
-	</header>
+    </header>
 	<main>
 		<section id="biographie" class="biographie">
 			<h1 class="h1">Biographie</h1>
