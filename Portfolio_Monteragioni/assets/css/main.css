@@ -518,7 +518,7 @@ audio:hover {
 }
 
 .competences-info{
-    background-color: rgba(224, 237, 247, 0.863);
+    background-color: rgba(224, 237, 247, 0.86);
     background-image: url("../images/illustrations/banner_informatique.jpg");
     background-blend-mode: screen;
     border-bottom: 3px solid black;
