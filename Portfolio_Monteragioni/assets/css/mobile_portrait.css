@@ -9,11 +9,24 @@ label,
 /* 
 MEDIA QUERY 
 */
-@media only screen and (min-width:320px) and (max-width: 431px) {
+@media only screen and (min-width:320px) and (max-width: 540px) {
     .sticky {
         position: fixed;
         top: 0;
+        transition-timing-function: ease-in;
+        transition: 0.2s;
         width: 100%;
+    }
+
+    nav a.active {
+        color: white;
+        font-weight: 600;
+        background: none;
+    }
+
+
+    .backgroundSticky {
+        background-color: rgb(102, 155, 188);
     }
 
     /* DIV AVEC PHOTO A MASQUER POUR LA VUE MOBILE */
@@ -58,7 +71,6 @@ MEDIA QUERY
         flex-direction: column;
         background: rgb(102, 155, 188);
         height: 220px;
-
     }
 
     .main_pages a {
@@ -66,25 +78,32 @@ MEDIA QUERY
     }
 
     label {
-        margin-top: 2%;
-        margin-bottom: 2%;
-        margin-left: auto;
-        margin-right: 5%;
-        width: 30px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 3%;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
-        font-size: 40px;
+        font-size: 20px;
         color: black;
         cursor: pointer;
+        position: sticky;
         z-index: 1000;
+        background: rgb(102, 155, 188);
+
+    }
+
+    .fa-solid {
+        font-size: 100%;
+        align-items: center;
+        margin: 0;
     }
 
     #toggle:checked+.main_pages {
         display: flex;
         align-items: center;
     }
-
 
     /* MENU BURGER FIN */
 
@@ -342,6 +361,7 @@ MEDIA QUERY
 
     fieldset {
         padding: 50px 50px;
+        margin-bottom: 0;
     }
 
     .formulaire_contact input,
@@ -363,6 +383,7 @@ MEDIA QUERY
         width: fit-content;
         border: none;
     }
+
 
     /* FORMULAIRE DE CONTACT FIN */
 
@@ -444,16 +465,33 @@ MEDIA QUERY
 
 }
 
-@media only screen and (max-width:1024px) and (min-width:432px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width:2047px) and (min-width:541px) and (-webkit-min-device-pixel-ratio: 2) {
     .sticky {
         position: fixed;
         top: 0;
+        transition-timing-function: ease-in;
+        transition: 0.2s;
         width: 100%;
     }
+
+    nav a.active {
+        color: white;
+        font-weight: 600;
+        background: none;
+    }
+
+    .backgroundSticky {
+        background-color: rgb(102, 155, 188);
+    }
+
 
     /* DIV AVEC PHOTO A MASQUER POUR LA VUE MOBILE */
     .grid-bio_portrait {
         display: none;
+    }
+
+    #toggle:checked {
+        background-color: black;
     }
 
     .divh2right,
@@ -491,27 +529,35 @@ MEDIA QUERY
         display: none;
         flex-direction: column;
         background: rgb(102, 155, 188);
-        height: 220px;
+        height: fit-content;
     }
 
     .main_pages a {
         width: 50%;
+
     }
 
     label {
-        margin-top: 2%;
-        margin-bottom: 2%;
-        margin-left: auto;
-        margin-right: 5%;
-        width: 30px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 3%;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
-        font-size: 40px;
+        font-size: 20px;
         color: black;
         cursor: pointer;
         position: sticky;
         z-index: 1000;
+        background: rgb(102, 155, 188);
+
+    }
+
+    .fa-solid {
+        font-size: 100%;
+        align-items: center;
+        margin: 0;
     }
 
     #toggle:checked+.main_pages {
@@ -595,12 +641,21 @@ MEDIA QUERY
         background-color: rgb(237, 237, 237);
         height: 100%;
         width: 100%;
-        text-align: justify;
+        text-align: center;
     }
 
     .iconesCompetences {
         width: 100%;
         height: 100%;
+    }
+
+    .grid-competences-text a {
+        text-align: center;
+    }
+
+    .CTAButton_competences a {
+        width: 75%;
+        align-content: center;
     }
 
     .gridCompetences {
