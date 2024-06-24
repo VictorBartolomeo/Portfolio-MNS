@@ -19,10 +19,11 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/mobile_portrait.css">
     <link rel="stylesheet" href="./assets/css/Macintosh.css">
-    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.2-web/css/all.min.css" >
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.2-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'"> -->
 </head>
 
 
@@ -38,7 +39,7 @@
 
             <label for="toggle"><img src="./assets/icons/burger.svg" alt="burger de navigation"></label>
             <input type="checkbox" id="toggle">
-            <nav class="main_pages">
+            <nav class="main_pages" id="stickyNavbar">
                 <a href="./index.html">HOME</a>
                 <a href="./Parcours.html">PARCOURS</a>
                 <a href="./Competences.html">COMPÉTENCES</a>
@@ -117,8 +118,8 @@
                         Black Cat Ate my Score <br>
                         22 rue Lothaire, 57000, Metz <br>
                         France<br>
-                        <a href="https://maps.app.goo.gl/CgfuQTnP3J6Ces1A6" target="_blank"><img
-                                src="./assets/icons/car.png" alt="Itinéraire" title="Itinéraire" style="width: 5%;"></a>
+                        <a href="https://maps.app.goo.gl/CgfuQTnP3J6Ces1A6" target="_blank"><i
+                                class="fa-solid fa-map-location-dot" title="Itinéraire"></i></a>
 
                     </div>
                 </div>
@@ -135,20 +136,25 @@
         </div>
 
         <div class="social-networks-footer">
-            <a href="https://github.com/VictorBartolomeo" target="_blank" aria-label="aller sur GitHub VictorBartolomeo"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/victor-monteragioni-07b616116/" target="_blank" aria-label="aller sur le LinkedIn Victor Monteragioni"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/victor.monteriggioni2" target="_blank" aria-label="aller sur le Facebook Victor Monteragioni"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/victormonteriggioni/" target="_blank" aria-label="aller sur l'Instagram Victor Monteragioni"><i
-                    class="fab fa-instagram"></i></a>
-            <a href="https://www.threads.net/@victormonteriggioni" target="_blank" aria-label="aller sur Threads Victor Monteragioni"><i class="fab fa-threads"></i></a>
-            <a href="mailto:victor.monteragioni@icloud.com" target="_blank" aria-label="Envoyer un mail à Victor Monteragioni"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://github.com/VictorBartolomeo" target="_blank"
+                aria-label="aller sur GitHub VictorBartolomeo"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/victor-monteragioni-07b616116/" target="_blank"
+                aria-label="aller sur le LinkedIn Victor Monteragioni"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/victor.monteriggioni2" target="_blank"
+                aria-label="aller sur le Facebook Victor Monteragioni"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/victormonteriggioni/" target="_blank"
+                aria-label="aller sur l'Instagram Victor Monteragioni"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.threads.net/@victormonteriggioni" target="_blank"
+                aria-label="aller sur Threads Victor Monteragioni"><i class="fab fa-threads"></i></a>
+            <a href="mailto:victor.monteragioni@icloud.com" target="_blank"
+                aria-label="Envoyer un mail à Victor Monteragioni"><i class="fa-regular fa-envelope"></i></a>
         </div>
 
         <p class="footer_copyright">
             &copy; Design Victor MONTERAGIONI
         </p>
     </footer>
+    <script src="./assets/js/script.js"></script>    
 </body>
 
 

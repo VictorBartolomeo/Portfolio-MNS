@@ -32,6 +32,13 @@ nav {
     margin: 0 auto;
 }
 
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 nav a {
     display: flex;
     text-decoration: none;
@@ -694,9 +701,11 @@ footer {
     grid-column: 2;
     text-align: center;
 }
-.gridFooter2 img{
-    width: auto;
-    max-width: 7.5%;
+
+.fa-solid, .fa-map-location-dot{
+    margin-top: 2.5%;
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
 }
 
 .gridFooter3 {
@@ -724,27 +733,27 @@ footer {
 }
 
 .fa-github {
-    color: rgb(255, 255, 255);
+    color: rgb(102, 155, 188);
 }
 
 .fa-linkedin {
-    color: rgb(63, 59, 196);
+    color: rgb(102, 155, 188);
 }
 
 .fa-facebook {
-    color: rgb(70, 98, 236);
+    color: rgb(102, 155, 188);
 }
 
 .fa-instagram {
-    color: rgb(171, 31, 166);
+    color: rgb(102, 155, 188);
 }
 
 .fa-threads {
-    color: rgb(198, 138, 9);
+    color: rgb(102, 155, 188);
 }
 
 .fa-envelope {
-    color: rgb(255, 255, 255);
+    color: rgb(102, 155, 188);
 }
 
 .fa-envelope:hover,
@@ -762,6 +771,7 @@ footer {
     text-align: center;
     color: white;
 }
+
 
 .realisations-musicales{
     background-color: rgb(224, 237, 247);

@@ -9,8 +9,12 @@ label,
 /* 
 MEDIA QUERY 
 */
-@media only screen and (min-width:320px) and (max-width: 431px)
- {
+@media only screen and (min-width:320px) and (max-width: 431px) {
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
 
     /* DIV AVEC PHOTO A MASQUER POUR LA VUE MOBILE */
     .grid-bio_portrait,
@@ -54,6 +58,7 @@ MEDIA QUERY
         flex-direction: column;
         background: rgb(102, 155, 188);
         height: 220px;
+
     }
 
     .main_pages a {
@@ -72,7 +77,6 @@ MEDIA QUERY
         font-size: 40px;
         color: black;
         cursor: pointer;
-        position: sticky;
         z-index: 1000;
     }
 
@@ -80,6 +84,7 @@ MEDIA QUERY
         display: flex;
         align-items: center;
     }
+
 
     /* MENU BURGER FIN */
 
@@ -116,7 +121,8 @@ MEDIA QUERY
     thead tr {
         display: none;
     }
-    .trSkills:hover{
+
+    .trSkills:hover {
         background-color: none;
     }
 
@@ -153,6 +159,7 @@ MEDIA QUERY
         text-align: justify;
         align-items: center;
     }
+
     .grid-competences-text {
         z-index: 2;
         background-color: rgb(237, 237, 237);
@@ -173,12 +180,14 @@ MEDIA QUERY
         grid-template-columns: 100%;
         gap: 5% 5%;
     }
-        .competences-photographie{
+
+    .competences-photographie {
         background-color: rgb(255, 255, 255);
         background-image: none;
         border-bottom: 3px solid black;
         padding-bottom: 50px;
     }
+
     .CTAButton_competences a {
         display: flex;
         position: absolute;
@@ -195,7 +204,7 @@ MEDIA QUERY
 
     }
 
-    
+
 
     .grid-competences_1 {
         grid-column-start: 1;
@@ -299,7 +308,8 @@ MEDIA QUERY
     .GridFilm4_Bouton-Realisations a {
         font-size: 0.5em;
     }
-    .realisations-music_centre a{
+
+    .realisations-music_centre a {
         padding: 0;
         margin: 10px 0;
     }
@@ -308,7 +318,7 @@ MEDIA QUERY
 
     .slideshow-container {
         box-sizing: content-box;
-        position:absolute;
+        position: absolute;
         margin: 0;
         margin-left: 0;
         margin-right: 0;
@@ -316,13 +326,13 @@ MEDIA QUERY
         width: 100%;
     }
 
-    .mySlides img{
+    .mySlides img {
         width: 100%;
     }
 
     /* FORMULAIRE DE CONTACT DEBUT */
 
-    .formulaire_contact{
+    .formulaire_contact {
         padding-bottom: 0px;
     }
 
@@ -342,6 +352,7 @@ MEDIA QUERY
         margin-bottom: 2%;
         border: 1px solid black
     }
+
     input[type="submit"] {
         background-color: rgb(224, 237, 247);
         display: flex;
@@ -363,6 +374,7 @@ MEDIA QUERY
         padding-bottom: 10px;
         background-color: rgb(0, 48, 73);
     }
+
     .gridFooter {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -371,27 +383,28 @@ MEDIA QUERY
         margin-right: 10%;
         width: auto;
         height: 100%;
-    
+
     }
-    
+
     .gridFooter1 {
         grid-column: 1;
         align-items: center;
-    
+
     }
-    
+
     .gridFooter1 img {
         display: flex;
         justify-content: end;
         align-items: center;
         width: 50%;
     }
+
     .gridFooter1 a {
         display: flex;
         justify-content: center;
     }
 
-    
+
     .gridFooter2 {
         display: flex;
         justify-content: center;
@@ -400,7 +413,8 @@ MEDIA QUERY
         text-align: justify;
         font-size: 0.5em;
     }
-    .gridFooter2 img{
+
+    .gridFooter2 img {
         width: auto;
         max-width: 30%;
     }
@@ -408,6 +422,7 @@ MEDIA QUERY
     .gridFooter3 {
         display: none;
     }
+
     .social-networks-footer {
         margin-top: 2%;
     }
@@ -429,8 +444,12 @@ MEDIA QUERY
 
 }
 
-@media only screen and (max-width:1024px) and (min-width:432px)  and (-webkit-min-device-pixel-ratio: 2)
- {
+@media only screen and (max-width:1024px) and (min-width:432px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
 
     /* DIV AVEC PHOTO A MASQUER POUR LA VUE MOBILE */
     .grid-bio_portrait {
@@ -503,12 +522,13 @@ MEDIA QUERY
     /* MENU BURGER FIN */
 
     /* ACCUEIL DEBUT */
-    .grid-pres_portrait{
+    .grid-pres_portrait {
         display: flex;
-        max-width:100%;
+        max-width: 100%;
         grid-column-start: 1;
         align-items: center;
     }
+
     .grid-pres_text {
         padding: 0;
         text-align: justify;
@@ -541,7 +561,8 @@ MEDIA QUERY
     thead tr {
         display: none;
     }
-    .trSkills:hover{
+
+    .trSkills:hover {
         background-color: none;
     }
 
@@ -624,7 +645,8 @@ MEDIA QUERY
         float: left;
         font-weight: bold;
     }
-    .competences-photographie{
+
+    .competences-photographie {
         background-color: rgb(255, 255, 255);
         background-image: none;
         border-bottom: 3px solid black;
@@ -640,7 +662,8 @@ MEDIA QUERY
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .audioCompositeur audio{
+
+    .audioCompositeur audio {
         margin-left: auto;
         margin-right: auto;
         width: 50%;
@@ -702,7 +725,8 @@ MEDIA QUERY
     .GridFilm4_Bouton-Realisations a {
         font-size: 0.5em;
     }
-    .realisations-music_centre a{
+
+    .realisations-music_centre a {
         padding: 0;
         margin: 10px 10px;
     }
@@ -711,7 +735,7 @@ MEDIA QUERY
 
     .slideshow-container {
         box-sizing: content-box;
-        position:absolute;
+        position: absolute;
         margin: 0;
         margin-left: 0;
         margin-right: 0;
@@ -719,13 +743,13 @@ MEDIA QUERY
         width: 100%;
     }
 
-    .mySlides img{
+    .mySlides img {
         width: 100%;
     }
 
     /* FORMULAIRE DE CONTACT DEBUT */
 
-    .formulaire_contact{
+    .formulaire_contact {
         padding-bottom: 0px;
     }
 
@@ -745,6 +769,7 @@ MEDIA QUERY
         margin-bottom: 2%;
         border: 1px solid black
     }
+
     input[type="submit"] {
         background-color: rgb(224, 237, 247);
         display: flex;
@@ -775,26 +800,27 @@ MEDIA QUERY
         margin-right: 10%;
         width: auto;
         height: 100%;
-    
+
     }
-    
+
     .gridFooter1 {
         grid-column: 1;
         align-items: center;
-    
+
     }
-    
+
     .gridFooter1 img {
         display: flex;
         justify-content: end;
         width: 50%;
     }
+
     .gridFooter1 a {
         display: flex;
         justify-content: center;
     }
 
-    
+
     .gridFooter2 {
         display: flex;
         justify-content: center;
@@ -805,12 +831,14 @@ MEDIA QUERY
         text-align: start;
         font-size: 0.9em;
     }
-    .gridFooter2 img{
+
+    .gridFooter2 img {
         width: auto;
         max-width: 20%;
     }
+
     .gridFooter3 {
-        display:flex;
+        display: flex;
         justify-content: end;
         align-content: center;
         align-items: center;
@@ -818,10 +846,10 @@ MEDIA QUERY
         padding-right: 25%;
         grid-row: 2;
         grid-column: 1;
-        width:100%;
+        width: 100%;
         text-align: justify;
     }
-    
+
     .gridFooter3_text {
         display: flex;
         justify-content: end;
@@ -829,6 +857,7 @@ MEDIA QUERY
         text-align: justify;
         font-size: 0.5em;
     }
+
     .social-networks-footer {
         margin-top: 2%;
     }
@@ -846,4 +875,3 @@ MEDIA QUERY
     /* FOOTER FIN */
 
 }
-
